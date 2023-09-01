@@ -15,7 +15,7 @@ variables:
   webAppName: ''
 
   # Environment name
-  environmentName: 'javaSptingBoot_group'
+  environmentName: 'dev'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
