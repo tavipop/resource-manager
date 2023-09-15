@@ -15,7 +15,7 @@ variables:
   azureSubscription: 'a43c6631-ffdb-40f8-b493-0400e0da527d'
   #azureSubscription: '97efd4ed-ede2-401b-a55b-137575b2457a'
   # Web app name
-  webAppName: ''
+  webAppName: 'javaSptingBoot'
 
   # Environment name
   environmentName: 'dev'
