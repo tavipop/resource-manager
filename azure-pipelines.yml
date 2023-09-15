@@ -30,13 +30,14 @@ stages:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
     pool:
-      vmImage: $(- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '17'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled')
+      vmImage: $(vmImageName)
 
     steps:
+    - task: JavaToolInstaller@0
+      inputs:
+        versionSpec: '17'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
     - task: Maven@3
       displayName: 'Maven Package'
       inputs:
